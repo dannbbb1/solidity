@@ -82,7 +82,7 @@ solc/solc <sol file> --optimize --ir-optimized --yul-optimizations <sequence>
 ### How to choose good parameters
 Choosing good parameters for a genetic algorithm is not a trivial task but phaser's defaults are generally enough to find a sequence that gives results comparable or better than one hand-crafted by an experienced developer for a given set of programs.
 The difficult part is providing a fairly representative set of input files.
-If the files you give do not need certain optimisations the tool will find sequences that do not use these optimisations and perform badly for programs that could benefit from them.
+If the files you give do not need certain optimizations the tool will find sequences that do not use these optimizations and perform badly for programs that could benefit from them.
 If all the provided files greatly benefit from a specific optimisation, the sequence may not work well for programs that do not.
 
 We have conducted [a set of rough experiments](https://github.com/ethereum/solidity/issues/7806#issuecomment-598644491) to evaluate some combinations of parameter values.
